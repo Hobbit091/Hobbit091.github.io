@@ -1,1 +1,1 @@
-[КЛИКАБЕЛЬГЛ].(https://Hobbit091.github.io).
+[КЛИКАБЕЛЬНО].(https://Hobbit091.github.io).
