@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="logo" viewBox="0 0 152 111"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="link" viewBox="0 0 92 62"><g fill="none">
+    <path d="M40 52.213a29.836 29.836 0 0 0 15.297 8.21 29.76 29.76 0 0 0 17.26-1.707 29.902 29.902 0 0 0 13.408-11.049A30.089 30.089 0 0 0 91 31a30.089 30.089 0 0 0-5.035-16.667 29.902 29.902 0 0 0-13.407-11.05 29.76 29.76 0 0 0-17.262-1.707A29.837 29.837 0 0 0 40 9.786" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <path d="M5 31h60M58 24l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="logo" viewBox="0 0 152 111"><g fill="none">
     <path fill="#1F1E1E" d="M0 0h111v111H0z"/>
     <path d="M30.178 54.699H20.111v-16.92h-.025v-.025h-3.538v17.369h13.63v-.424ZM33.173 55.123h13.68v-.424H36.711v-8.422h7.924v-.45h-7.924v-7.649h10.142v-.424h-13.68v17.369ZM53.385 55.123V38.178c2.168 0 8.846.822 9.345 10.49v6.455h3.538V37.754H62.73v7.8c-1.072-4.635-4.46-7.8-9.345-7.8h-3.538v17.369h3.538ZM73.539 55.123V38.178c2.168 0 8.846.822 9.344 10.49v6.455h3.539V37.754h-3.539v7.8c-1.071-4.635-4.46-7.8-9.344-7.8H70v17.369h3.539ZM90.154 55.123h3.538V37.754h-3.538v17.369Z" fill="#fff"/>
     <path fill="#BC3324" d="M61 69h91v32H61z"/>
