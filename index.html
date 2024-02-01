@@ -24,7 +24,7 @@
       <a href="index.html" class="page-header__logo">
         <!---- <img src="assets/images/logo.svg" class="page-header__logo-img"/>   -->
         <svg class="page-header__logo-img" width="202" height="147">
-          <use xlink:href="assets/icons/symbols.svg#logo">
+          <use xlink:href="assets/icons/symbols.svg#logo" />
         </svg>
       </a>
       <nav class="page-header__nav">
@@ -32,11 +32,31 @@
         <a href="#" class="page-header__nav-link link">Блог</a>
         <a href="#" class="page-header__nav-link link">О нас</a>
         <a href="#" class="page-header__nav-link link">Контакты</a>
-        <a href="event.html" class="page-header__nav-link link">Бронь(Временно так)</a>
-        <a href="default.html" class="page-header__nav-link link">Дефолт (Временно так)</a>
+        <a href="event.html" class="page-header__nav-link link">Бронь(Костыль)</a>
+        <a href="default.html" class="page-header__nav-link link">Дефолт</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
 
-      <a href="#" class="btn page-header__user-btn">Войти</a>
+      <div class="page-header__right-block">
+        <a href="#" class="page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+
+        <button type="button" class="page-header__nav-toggle"></button>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -44,7 +64,7 @@
       <header class="main-header home__main-header">
         <h1 class="main-header__title">Арт-пространство</h1>
         <picture class="main-header__picture">
-          <img src="assets/images/lenni.png" class="main-header__img" />
+          <img src="assets/images/lenni.png" class="main-header__img" alt="lenni" />
         </picture>
         <p class="main-header__text">
           для людей, горящих сердцем и делом
@@ -79,10 +99,10 @@
           </div>
           <div class="about__block2">
             <picture class="about__picture">
-              <img class="about__img" src="assets/images/about1.jpg" />
+              <img class="about__img" src="assets/images/about1.jpg" alt="about1" />
             </picture>
             <picture class="about__picture2">
-              <img class="about__img" src="assets/images/about2.jpg" />
+              <img class="about__img" src="assets/images/about2.jpg " alt="about2" />
             </picture>
             <h3 class="about__title about__title--w868 about__title--2">
               Мы предоставляем площади для вашего мероприятия
@@ -90,10 +110,11 @@
             <p class="about__text about__text--2">
               И оказываем помощь с организацией, если вам это нужно. Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
             </p>
+
           </div>
           <div class="about__block3">
             <picture class="about__picture3">
-              <img class="about__img2" src="assets/images/about3.jpg" />
+              <img class="about__img2" src="assets/images/about3.jpg" alt="about3" />
             </picture>
             <div class="about__block3--wrapper">
               <p class="about__text about__text--mb90">
@@ -103,8 +124,8 @@
                 <span class="link__name">
                   Смотреть
                 </span>
-                <svg class="link__icon" width=60" height="91">
-                  <use xlink:href="assets/icons/symbols.svg#link">
+                <svg class="link__icon" width="60" height="91">
+                  <use xlink:href="assets/icons/symbols.svg#link" />
                 </svg>
               </a>
             </div>
@@ -117,8 +138,8 @@
 
         <div class="upcoming__wrapper">
           <h2 class="events__title section-title">Мероприятия</h2>
-          <div class="events__list listing__card-list events__list--mb156 ">
-            <article class="event-card  listing__event-card">
+          <div class="events__list listing__card-list events__list--mb70 ">
+            <article class="event-card  listing__event-card-1">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
                   <img src="assets/images/events/nirvana.png" alt="nirvana" class="event-card__img" />
@@ -128,7 +149,7 @@
                 <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
               </a>
             </article>
-            <article class="event-card  listing__event-card">
+            <article class="event-card  listing__event-card-2">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
                   <img src="assets/images/events/stuff.png" alt="stuff" class="event-card__img" />
@@ -138,7 +159,7 @@
                 <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
               </a>
             </article>
-            <article class="event-card  listing__event-card">
+            <article class="event-card  listing__event-card-3">
               <a href="#" class="event-card__link">
                 <picture class="event-card__picture">
                   <img src="assets/images/events/Sade.png" alt="The Best of Sade" class="event-card__img" />
@@ -149,13 +170,19 @@
               </a>
             </article>
           </div>
-
-
-
-          <a class="upcoming__link link">
-            <svg class="contacts_icon" width="15" height="2">
-              <use xlink:href="assets/icons/symbols.svg#slider">
+          <div class="upcoming__slider link">
+            <svg class="upcoming__icon--dg180 contacts_icon" width="91" height="60">
+              <use xlink:href="assets/icons/symbols.svg#link" />
             </svg>
+            <svg class="upcoming__icon contacts_icon" width="180" height="24">
+              <use xlink:href="assets/icons/symbols.svg#slider" />
+            </svg>
+            <svg class="upcoming__icon contacts_icon" width="91" height="60">
+              <use xlink:href="assets/icons/symbols.svg#link" />
+            </svg>
+          </div>
+
+          <a class="link upcoming__link ">
             <span class="link__name upcoming__link">
               Смотреть все
             </span>
@@ -171,7 +198,7 @@
           <h2 class="listing__title section-title">Блог</h2>
           <div class="listing__article-list">
             <!-- prettier-ignore -->
-            <article class="article-card listing__article-card">
+            <article class="article-card listing__article-card-1">
               <a href="#" class="article-card__link">
                 <picture class="article-card__picture">
                   <img src="assets/images/blog/teatr.png" alt="Theatre Photosession" class="article-card__img" />
@@ -181,16 +208,16 @@
                 <time datetime="2022-11-26T00:00" class="article-card__time">26.11.2022</time>
                 <a href="#" class="article-card__title-link">
                   <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
-                  <div class="article-card__arrow arrow">
-                    <svg class="arrow__icon" width="92" height="62">
-                      <use xlink:href="assets/icons/symbols.svg#link"></use>
-                    </svg>
-                  </div>
                 </a>
                 <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#link"></use>
+                  </svg>
+                </div>
               </div>
             </article>
-            <article class="article-card listing__article-card">
+            <article class="article-card listing__article-card-2">
               <a href="#" class="article-card__link">
                 <picture class="article-card__picture">
                   <img src="assets/images/blog/vr.png" alt="VR" class="article-card__img" />
@@ -200,16 +227,16 @@
                 <time datetime="2022-11-05T00:00" class="article-card__time">05.11.2022</time>
                 <a href="#" class="article-card__title-link">
                   <h4 class="article-card__title">Выставка VR в Томске</h4>
-                  <div class="article-card__arrow arrow">
-                    <svg class="arrow__icon" width="92" height="62">
-                      <use xlink:href="assets/icons/symbols.svg#link"></use>
-                    </svg>
-                  </div>
                 </a>
                 <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#link"></use>
+                  </svg>
+                </div>
               </div>
             </article>
-            <article class="article-card listing__article-card">
+            <article class="article-card listing__article-card-3">
               <a href="#" class="article-card__link">
                 <picture class="article-card__picture">
                   <img src="assets/images/blog/radio.png" alt="radio" class="article-card__img" />
@@ -219,13 +246,13 @@
                 <time datetime="2022-11-01T00:00" class="article-card__time">01.11.2022</time>
                 <a href="#" class="article-card__title-link">
                   <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
-                  <div class="article-card__arrow arrow">
-                    <svg class="arrow__icon" width="92" height="62">
-                      <use xlink:href="assets/icons/symbols.svg#link"></use>
-                    </svg>
-                  </div>
                 </a>
                 <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#link"></use>
+                  </svg>
+                </div>
               </div>
             </article>
           </div>
@@ -243,12 +270,12 @@
               <div class="contacts-item">
                 <div class="contacts-item__img">
                   <svg class="contacts_icon" width="24" height="24">
-                    <use xlink:href="assets/icons/symbols.svg#location">
+                    <use xlink:href="assets/icons/symbols.svg#location" />
                   </svg>
                 </div>
                 <div class="contacts-item__content">
                   <h4 class="contacts-item__title">Томск, Белая 8</h4>
-                  <p class="contacts-item__info">2 этаж</з>
+                  <p class="contacts-item__info">2 этаж</p>
                   <p class="contacts-item__info">оф. 207-208</p>
                 </div>
               </div>
@@ -256,12 +283,12 @@
               <div class="contacts-item">
                 <div class="contacts-item__img">
                   <svg class="contacts_icon" width="24" height="24">
-                    <use xlink:href="assets/icons/symbols.svg#home">
+                    <use xlink:href="assets/icons/symbols.svg#home" />
                   </svg>
                 </div>
                 <div class="contacts-item__content">
                   <h4 class="contacts-item__title">Отдел аренды</h4>
-                  <a href="tel: 74993500730" class="contacts-item__info">+74993500730</a>
+                  <a href="tel:74993500730" class="contacts-item__info">+74993500730</a>
                   <a href="mailto:hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
                 </div>
               </div>
@@ -269,12 +296,12 @@
               <div class="contacts-item">
                 <div class="contacts-item__img">
                   <svg class="contacts_icon" width="24" height="24">
-                    <use xlink:href="assets/icons/symbols.svg#star">
+                    <use xlink:href="assets/icons/symbols.svg#star" />
                   </svg>
                 </div>
                 <div class="contacts-item__content">
                   <h4 class="contacts-item__title">Отдел мероприятий</h4>
-                  <a href="tel: 74993500730" class="contacts-item__info">+74993500730</a>
+                  <a href="tel:74993500730" class="contacts-item__info">+74993500730</a>
                   <a href="mailto:hi@tagree.ru" class="contacts-item__info">hi@tagree.ru</a>
                 </div>
               </div>
@@ -287,10 +314,13 @@
         </div>
       </section>
       <div class="doit">
-        <p class="doit__text">
-          Просто делайте, что нравится,
+        <p class="doit__text1">
+          Просто делайте,
         </p>
-        <p class="doit__text">
+        <p class="doit__text2">
+          что нравится,
+        </p>
+        <p class="doit__text3">
           а мы вам поможем
         </p>
       </div>
